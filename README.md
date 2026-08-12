@@ -2,7 +2,7 @@
 
 A browser-based real-time object detection application powered by **YOLO26N** and the **COCO dataset**. The application uses the user's webcam to perform object detection directly inside the browser, with no Python backend, server-side inference, or local model installation required.
 
-## Overview
+## ✨ Overview
 
 **Object Detection with COCO** provides a simple interface for real-time webcam object detection using the 80 classes of the COCO dataset. Users can:
 
@@ -11,7 +11,7 @@ A browser-based real-time object detection application powered by **YOLO26N** an
 - Select an object tracking algorithm
 - Run the entire pipeline directly in the browser
 
-## How It Works
+## 📖 How It Works
 
 The YOLO26N ONNX model is loaded from a remote model repository when detection starts. The application does not send frames to a Python server. Instead, the pipeline runs locally inside the user's browser:
 
@@ -35,7 +35,7 @@ Canvas overlay
 Bounding boxes
 ```
 
-## Technologies
+## 🛠️ Technologies
 
 - HTML5
 - CSS3
@@ -51,7 +51,7 @@ Bounding boxes
 - OC-SORT
 - GitHub Pages
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 object-detection-with-coco
@@ -65,7 +65,7 @@ object-detection-with-coco
 └── README.md
 ```
 
-## Run Locally
+## 🚀 Run Locally
 
 Clone the repository:
 
@@ -92,7 +92,7 @@ Then, open:
 http://localhost:5500
 ```
 
-## Privacy
+## 🌐 Privacy
 
 Webcam frames are processed locally in the user's browser. The application does not require a server to receive webcam frames.
 The YOLO26N model is downloaded from its remote model host when required.
@@ -105,12 +105,12 @@ YOLO26N is used because it is better suited to browser-based real-time inference
 ## Model
 
 YOLO26N is loaded remotely from: https://huggingface.co/flotek/yolo26n-onnx
+
 No model file needs to be committed to the repository.
 
-## License
+## 📄 License
 
-This project uses third-party software and model components. Review the applicable licenses before commercial redistribution.
-Relevant projects:
+This project uses third-party software and model components. Review the applicable licenses before commercial redistribution. Relevant projects:
 - [Ultralytics](https://github.com/ultralytics/ultralytics)
 - [YOLO26](https://docs.ultralytics.com/models/yolo26/)
 - [ONNX Runtime](https://onnxruntime.ai/)
