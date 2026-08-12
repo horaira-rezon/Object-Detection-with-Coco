@@ -1,0 +1,391 @@
+@media(max-width:700px) {
+
+    html,
+    body {
+        height: 100%;
+        min-height: 100%;
+        overflow: hidden
+    }
+
+    .setup-body {
+        height: 100svh;
+        overflow: hidden
+    }
+
+    .setup-header {
+        height: 52px;
+        padding: 0 14px
+    }
+
+    .brand {
+        font-size: 15px
+    }
+
+    .model-badge {
+        font-size: 8px;
+        padding: 6px 9px
+    }
+
+    .setup-main {
+        height: calc(100svh - 52px);
+        width: 100%;
+        padding: 10px;
+        display: block
+    }
+
+    .setup-card {
+        height: calc(100svh - 72px);
+        max-height: none;
+        border-radius: 13px;
+        padding: 17px 15px 13px
+    }
+
+    .eyebrow {
+        font-size: 9px;
+        margin-bottom: 7px
+    }
+
+    .setup-card h1 {
+        font-size: 25px;
+        margin-bottom: 7px
+    }
+
+    .intro {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 13px
+    }
+
+    .class-toolbar {
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 9px
+    }
+
+    .search-wrap input {
+        height: 38px
+    }
+
+    .toolbar-actions {
+        width: 100%
+    }
+
+    .toolbar-actions .small-button {
+        flex: 1
+    }
+
+    .class-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px
+    }
+
+    .class-item {
+        min-height: 37px;
+        font-size: 11px;
+        padding: 6px 7px
+    }
+
+    .class-item input {
+        width: 14px;
+        height: 14px
+    }
+
+    .setup-footer {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 9px;
+        padding-top: 9px
+    }
+
+    .selection-count {
+        font-size: 11px
+    }
+
+    .primary-button {
+        width: 100%;
+        height: 42px
+    }
+
+    .detection-body {
+        height: 100svh;
+        min-height: 100svh
+    }
+
+    .detect-header {
+        height: 54px;
+        padding: 0 12px
+    }
+
+    .detect-header .brand {
+        font-size: 14px
+    }
+
+    .back-button {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px
+    }
+
+    .header-status {
+        font-size: 9px;
+        margin-right: 8px
+    }
+
+    .hamburger {
+        display: flex;
+        width: 36px;
+        height: 34px;
+        border: 1px solid #2d333c;
+        background: #15191f;
+        border-radius: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        cursor: pointer
+    }
+
+    .hamburger span {
+        width: 15px;
+        height: 1.5px;
+        background: #cbd1d8
+    }
+
+    .detection-layout {
+        height: calc(100svh - 54px);
+        display: block
+    }
+
+    .left-panel,
+    .right-panel {
+        display: none
+    }
+
+    .camera-stage {
+        height: calc(100svh - 54px);
+        width: 100%;
+        padding: 0;
+        display: block
+    }
+
+    .camera-frame {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+        border: 0;
+        box-shadow: none
+    }
+
+    .camera-frame video {
+        object-fit: cover
+    }
+
+    .stream-overlay {
+        font-size: 9px
+    }
+
+    .top-left {
+        left: 9px;
+        top: 7px
+    }
+
+    .top-right {
+        right: 9px;
+        top: 7px
+    }
+
+    .bottom-left {
+        left: 9px;
+        bottom: 7px
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        z-index: 25;
+        top: 60px;
+        right: 9px;
+        width: min(360px, calc(100vw - 18px));
+        height: calc(100svh - 69px);
+        background: rgba(17, 20, 25, .98);
+        border: 1px solid #2a3038;
+        border-radius: 11px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, .5);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: .18s;
+        overflow: hidden
+    }
+
+    .mobile-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto
+    }
+
+    .mobile-menu-inner {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 15px 13px 18px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scroll-behavior: smooth
+    }
+
+    .mobile-menu-title {
+        font-size: 13px;
+        font-weight: 700
+    }
+
+    .mobile-menu .control-section {
+        margin-top: 17px;
+        padding-top: 15px;
+        border-top: 1px solid #242a32
+    }
+
+    .mobile-menu .control-section.first-control {
+        margin-top: 12px;
+        padding-top: 0;
+        border-top: 0
+    }
+
+    .mobile-menu .tracker-options {
+        gap: 7px
+    }
+
+    .mobile-menu .tracker-button {
+        height: 38px;
+        font-size: 11px
+    }
+
+    .mobile-classes-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 18px;
+        padding-top: 15px;
+        border-top: 1px solid #242a32;
+        font-size: 11px;
+        font-weight: 700
+    }
+
+    .mobile-classes-head div {
+        display: flex;
+        gap: 5px
+    }
+
+    .mobile-menu .small-button {
+        height: 29px;
+        padding: 0 8px;
+        font-size: 9px
+    }
+
+    .mobile-class-list {
+        height: auto;
+        overflow: visible;
+        margin-top: 8px
+    }
+
+    .mobile-class-list .detect-class-item {
+        padding: 7px 5px;
+        font-size: 11px
+    }
+
+    .camera-message {
+        font-size: 11px
+    }
+
+    .camera-frame video {
+        background: #050608
+    }
+}
+
+@media(max-width:420px) {
+    .setup-card h1 {
+        font-size: 22px
+    }
+
+    .class-grid {
+        grid-template-columns: 1fr
+    }
+
+    .setup-card {
+        padding: 15px 12px 11px
+    }
+
+    .setup-main {
+        padding: 7px
+    }
+
+    .setup-card {
+        height: calc(100svh - 66px)
+    }
+}
+
+.camera-facing-options {
+    display: flex;
+    gap: 7px
+}
+
+.camera-facing-options .tracker-button {
+    flex: 1
+}
+
+.camera-frame,
+.camera-frame video,
+.camera-frame canvas {
+    backface-visibility: hidden;
+    transform-style: flat
+}
+
+.camera-frame video {
+    will-change: transform
+}
+
+.camera-frame canvas {
+    will-change: contents
+}
+
+@media(max-width:700px) {
+    .mobile-menu .camera-facing-options {
+        gap: 8px;
+        margin-top: 10px
+    }
+
+    .mobile-menu .camera-facing-options .tracker-button {
+        height: 39px
+    }
+
+    .mobile-menu .section-label {
+        margin-bottom: 9px
+    }
+
+    .mobile-menu .switch-row {
+        min-height: 36px
+    }
+
+    .mobile-menu .detect-search {
+        margin-top: 9px
+    }
+
+    .mobile-menu .mobile-class-list .detect-class-item {
+        min-height: 34px;
+        box-sizing: border-box
+    }
+
+    .mobile-menu-inner::-webkit-scrollbar {
+        width: 5px
+    }
+
+    .mobile-menu-inner::-webkit-scrollbar-thumb {
+        background: #343b46;
+        border-radius: 8px
+    }
+
+    .mobile-menu-inner::-webkit-scrollbar-track {
+        background: transparent
+    }
+}
